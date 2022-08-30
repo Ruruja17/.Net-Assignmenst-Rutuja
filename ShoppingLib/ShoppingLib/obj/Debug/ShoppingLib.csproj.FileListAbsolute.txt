@@ -1,0 +1,6 @@
+C:\WGS\ShoppingLib\ShoppingLib\bin\Debug\ShoppingLib.dll
+C:\WGS\ShoppingLib\ShoppingLib\bin\Debug\ShoppingLib.pdb
+C:\WGS\ShoppingLib\ShoppingLib\obj\Debug\ShoppingLib.csproj.AssemblyReference.cache
+C:\WGS\ShoppingLib\ShoppingLib\obj\Debug\ShoppingLib.csproj.CoreCompileInputs.cache
+C:\WGS\ShoppingLib\ShoppingLib\obj\Debug\ShoppingLib.dll
+C:\WGS\ShoppingLib\ShoppingLib\obj\Debug\ShoppingLib.pdb

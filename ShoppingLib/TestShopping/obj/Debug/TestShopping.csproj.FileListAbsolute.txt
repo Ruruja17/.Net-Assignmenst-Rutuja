@@ -1,0 +1,11 @@
+C:\WGS\ShoppingLib\TestShopping\bin\Debug\TestShopping.exe.config
+C:\WGS\ShoppingLib\TestShopping\bin\Debug\TestShopping.exe
+C:\WGS\ShoppingLib\TestShopping\bin\Debug\TestShopping.pdb
+C:\WGS\ShoppingLib\TestShopping\bin\Debug\ShoppingLib.dll
+C:\WGS\ShoppingLib\TestShopping\bin\Debug\ShoppingLib.pdb
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.csproj.AssemblyReference.cache
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.csproj.SuggestedBindingRedirects.cache
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.csproj.CoreCompileInputs.cache
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.csproj.CopyComplete
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.exe
+C:\WGS\ShoppingLib\TestShopping\obj\Debug\TestShopping.pdb

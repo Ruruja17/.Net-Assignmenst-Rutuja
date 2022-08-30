@@ -1,0 +1,6 @@
+C:\WGS\PersonalInfoLib\PersonalInfoLib\bin\Debug\PersonalInfoLib.dll
+C:\WGS\PersonalInfoLib\PersonalInfoLib\bin\Debug\PersonalInfoLib.pdb
+C:\WGS\PersonalInfoLib\PersonalInfoLib\obj\Debug\PersonalInfoLib.csproj.AssemblyReference.cache
+C:\WGS\PersonalInfoLib\PersonalInfoLib\obj\Debug\PersonalInfoLib.csproj.CoreCompileInputs.cache
+C:\WGS\PersonalInfoLib\PersonalInfoLib\obj\Debug\PersonalInfoLib.dll
+C:\WGS\PersonalInfoLib\PersonalInfoLib\obj\Debug\PersonalInfoLib.pdb
