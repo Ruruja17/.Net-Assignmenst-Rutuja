@@ -38,7 +38,7 @@ namespace demoproject
             Console.WriteLine("before swapping:"  +num2);
             Console.WriteLine("before swapping:"  + num4);
             
-            SwapNum( num2, num4);
+            SwapNum(  ref num2,  ref num4);
 
             Console.WriteLine("After Swaping:"+ num2);
             Console.WriteLine("After Swaping:" + num4);
@@ -48,7 +48,7 @@ namespace demoproject
             Console.ReadLine();
         }
 
-        static void SwapNum( int num2,  int num4)
+        static void SwapNum(ref int num2,  ref int num4)
         {
             int temp;
             temp = num2;
