@@ -1,0 +1,8 @@
+C:\WGS\demoproject\demoproject\bin\Debug\demoproject.exe.config
+C:\WGS\demoproject\demoproject\bin\Debug\demoproject.exe
+C:\WGS\demoproject\demoproject\bin\Debug\demoproject.pdb
+C:\WGS\demoproject\demoproject\obj\Debug\demoproject.csproj.AssemblyReference.cache
+C:\WGS\demoproject\demoproject\obj\Debug\demoproject.csproj.SuggestedBindingRedirects.cache
+C:\WGS\demoproject\demoproject\obj\Debug\demoproject.csproj.CoreCompileInputs.cache
+C:\WGS\demoproject\demoproject\obj\Debug\demoproject.exe
+C:\WGS\demoproject\demoproject\obj\Debug\demoproject.pdb
