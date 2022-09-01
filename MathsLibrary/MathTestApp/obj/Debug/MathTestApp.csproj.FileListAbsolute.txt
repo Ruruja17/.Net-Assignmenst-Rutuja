@@ -1,0 +1,9 @@
+C:\WGS\MathsLibrary\MathTestApp\bin\Debug\MathTestApp.dll
+C:\WGS\MathsLibrary\MathTestApp\bin\Debug\MathTestApp.pdb
+C:\WGS\MathsLibrary\MathTestApp\bin\Debug\MathsLibrary.dll
+C:\WGS\MathsLibrary\MathTestApp\bin\Debug\MathsLibrary.pdb
+C:\WGS\MathsLibrary\MathTestApp\obj\Debug\MathTestApp.csproj.AssemblyReference.cache
+C:\WGS\MathsLibrary\MathTestApp\obj\Debug\MathTestApp.csproj.CoreCompileInputs.cache
+C:\WGS\MathsLibrary\MathTestApp\obj\Debug\MathTestApp.csproj.CopyComplete
+C:\WGS\MathsLibrary\MathTestApp\obj\Debug\MathTestApp.dll
+C:\WGS\MathsLibrary\MathTestApp\obj\Debug\MathTestApp.pdb

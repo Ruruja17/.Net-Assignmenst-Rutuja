@@ -1,0 +1,6 @@
+C:\WGS\MathsLibrary\MathsLibrary\bin\Debug\MathsLibrary.dll
+C:\WGS\MathsLibrary\MathsLibrary\bin\Debug\MathsLibrary.pdb
+C:\WGS\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.csproj.AssemblyReference.cache
+C:\WGS\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.csproj.CoreCompileInputs.cache
+C:\WGS\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.dll
+C:\WGS\MathsLibrary\MathsLibrary\obj\Debug\MathsLibrary.pdb

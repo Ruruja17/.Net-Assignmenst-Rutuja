@@ -1,0 +1,8 @@
+C:\WGS\OOPSDemoApp\OOPSDemoApp\bin\Debug\OOPSDemoApp.exe.config
+C:\WGS\OOPSDemoApp\OOPSDemoApp\bin\Debug\OOPSDemoApp.exe
+C:\WGS\OOPSDemoApp\OOPSDemoApp\bin\Debug\OOPSDemoApp.pdb
+C:\WGS\OOPSDemoApp\OOPSDemoApp\obj\Debug\OOPSDemoApp.csproj.AssemblyReference.cache
+C:\WGS\OOPSDemoApp\OOPSDemoApp\obj\Debug\OOPSDemoApp.csproj.SuggestedBindingRedirects.cache
+C:\WGS\OOPSDemoApp\OOPSDemoApp\obj\Debug\OOPSDemoApp.csproj.CoreCompileInputs.cache
+C:\WGS\OOPSDemoApp\OOPSDemoApp\obj\Debug\OOPSDemoApp.exe
+C:\WGS\OOPSDemoApp\OOPSDemoApp\obj\Debug\OOPSDemoApp.pdb
