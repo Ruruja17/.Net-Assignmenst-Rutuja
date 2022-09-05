@@ -1,0 +1,11 @@
+C:\WGS\HRLib\ABCDCorp\bin\Debug\ABCDCorp.exe.config
+C:\WGS\HRLib\ABCDCorp\bin\Debug\ABCDCorp.exe
+C:\WGS\HRLib\ABCDCorp\bin\Debug\ABCDCorp.pdb
+C:\WGS\HRLib\ABCDCorp\bin\Debug\HRLib.dll
+C:\WGS\HRLib\ABCDCorp\bin\Debug\HRLib.pdb
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.csproj.AssemblyReference.cache
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.csproj.SuggestedBindingRedirects.cache
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.csproj.CoreCompileInputs.cache
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.csproj.CopyComplete
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.exe
+C:\WGS\HRLib\ABCDCorp\obj\Debug\ABCDCorp.pdb
