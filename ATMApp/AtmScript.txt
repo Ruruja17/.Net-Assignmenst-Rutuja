@@ -1,0 +1,48 @@
+﻿create database Atm;
+use Atm;
+create table USER(
+CARDNO bigint not null primary key,
+ PIN Numeric(50),
+FName varchar(20),
+LName varchar(20),
+ContactNo numeric(10),
+Balance Numeric (20),
+ACC_NO bigint
+
+
+ );
+ INSERT INTO USER VALUES
+ (3467892123344566,2345,  "Jace", "Wills", 9189089012,40000,23456755891281);
+ 
+  INSERT INTO USER VALUES
+ (4468872123344566,4457, "Rutuja", "Jadhav", 9178902345,60000,24466856901382 );
+ 
+ 
+  INSERT INTO USER VALUES
+ (3767892123346568,8823,  "Sanskrut", "Patil", 9199889217,90000,33456755891291);
+ 
+  INSERT INTO USER VALUES
+ (2267892823385469,5432,  "Isha", "Joshi", 8889089657,20000,57456755899278);
+ 
+  INSERT INTO USER VALUES
+ (5467892123274596,4267, "Ben", "Stroke", 9199089775,10000,63456755891281);
+ 
+ create table CARD( 
+ 
+  CARDNO bigint not null,
+ Transaction_Date  datetime not null,
+ Transaction_type  varchar(20),
+ Amount Numeric(7,2),
+
+  foreign key (CARDNO) references USER(CARDNO)
+ );
+  INSERT INTO CARD VALUES
+  (3767892123346568,'2022-09-17','Withdraw',5000);
+  
+  INSERT INTO CARD VALUES
+  (5467892123274596,'2022-09-17','Deposit',15000);
+ 
+  select CardNo, Transaction_Date, Transaction_type, Amount from card  where CARDNO = 5467892123274596   order by Transaction_Date desc limit 3;
+
+   select count(*) as count from card  where CARDNO = 5467892123274596 and Transaction_Date = '2022-09-19';
+ 
