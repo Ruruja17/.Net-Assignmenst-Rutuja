@@ -1,0 +1,52 @@
+﻿
+@{
+    ViewBag.Title = "LoginForm";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+<h2>LoginForm</h2>
+@using (Html.BeginForm("LoginForm", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+
+    <table class="table table-bordered">
+
+        <tr>
+            <td>
+                userName <input type="text" name="userName" class="userName" required="">
+            </td>
+
+
+        </tr>
+        <tr>
+            <td>
+                Password <input type="text" name="password" class="password" required="" />
+            </td>
+        <tr>
+            <td colspan="2" style="text-align:center">
+                <input type="submit" class="btn btn-primary" />
+            </td>
+        </tr>
+
+
+    </table>
+
+}
+@if (ViewBag.msg != null)
+{
+    @*<script>
+
+                    $(document).ready(function () {
+
+                        alert('@ViewBag.msg');
+
+                    });
+
+        </script>*@
+    <span class="text-danger">@ViewBag.msg</span>
+}
+

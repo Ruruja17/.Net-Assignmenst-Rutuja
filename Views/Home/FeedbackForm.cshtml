@@ -1,0 +1,112 @@
+﻿@model MVCDemoApp_WGS.Models.Feedback
+
+
+@{
+    ViewBag.Title = "FeedbackForm";
+}
+<script src="~/Scripts/jquery-3.4.1.min.js"></script>
+<script src="~/Scripts/jquery.validate.min.js"></script>
+<script src="~/Scripts/jquery.validate.unobtrusive.min.js"></script>
+<h2>FeedbackForm</h2>
+@using (Html.BeginForm("FeedbackForm", "Home", FormMethod.Post))
+{
+    @Html.ValidationSummary()
+    <table class="table table-striped">
+        <tr>
+            <td>
+                @Html.LabelFor(m => m.studentId)
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.studentId, new { @class = "form-control" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.studentId)</span>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(m => m.StudentName)
+            </td>
+            <td>
+                @Html.TextBoxFor(m => m.StudentName, new { @class = "form-control" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.StudentName)</span>
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="editor-label">
+                    @Html.LabelFor(m => m.course)
+                </div>
+            </td>
+            <td>
+                <div class="editor-field">
+                    @Html.DropDownListFor(m => m.course, new List<SelectListItem>
+            {
+            new SelectListItem { Text = "computer science", Value = "1"},
+            new SelectListItem { Text = "IT", Value = "2"},
+            new SelectListItem { Text = "Extc", Value = "3"},
+            new SelectListItem { Text = "Mech", Value = "4"},
+            new SelectListItem { Text = "chemical", Value = "5"}
+
+            }, "Select", new { @id = "ddlcourse" })
+
+
+                    <span class="text-danger">@Html.ValidationMessageFor(m => m.course, "", new { @class = "error" })</span>
+
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                @Html.LabelFor(m => m.gender)
+            </td>
+
+            <td>
+                @Html.Label("Male")
+                @Html.RadioButtonFor(m => m.gender, "M")
+                @Html.Label("Female")
+                @Html.RadioButtonFor(m => m.gender, "F")
+
+                <span class=" text-danger">@Html.ValidationMessageFor(m => m.gender, "", new { @class = "error" })</span>
+            </td>
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.rating) </td>
+            <td>
+                @Html.Label("Excellent")
+                @Html.RadioButtonFor(m => m.rating, "Excellent")
+                @Html.Label("Average")
+                @Html.RadioButtonFor(m => m.rating, "Average")
+                @Html.Label("Good")
+                @Html.RadioButtonFor(m => m.rating, "Good")
+                @Html.Label("Poor")
+                @Html.RadioButtonFor(m => m.rating, "Poor")
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.rating, "", new { @class = "error" })</span>
+            </td>
+
+        </tr>
+        <tr>
+            <td>@Html.LabelFor(m => m.suggestion)</td>
+            <td>
+                @Html.TextAreaFor(m => m.suggestion, new { @class = "form-control", cols = 60, row = 8, placeholder = "Enter your suggestion" })
+                <span class="text-danger">@Html.ValidationMessageFor(m => m.suggestion, "", new { @class = "error" })</span>
+            </td>
+        </tr>
+        <tr>
+
+            <td colspan="2" style="text-align:center">
+                <input type="submit" class="btn btn-primary" />
+            </td>
+        </tr>
+
+    </table>
+
+}
+@{
+    if (ViewBag.SuccessMessage != null)
+    {
+        <div>
+            @ViewBag.SuccessMessage
+        </div>
+    }
+}
+
