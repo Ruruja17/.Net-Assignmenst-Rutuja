@@ -1,0 +1,116 @@
+create  database requestportaldb;
+********************************************************************************************
+
+use requestportaldb;
+********************************************************************************************
+
+create table GCM(
+GCM_ID int NOT NULL  PRIMARY KEY, 
+GCM_Level VARCHAR(20)  UNIQUE);
+
+insert into GCM values (1,"GCM  1");
+insert into GCM values (2,"GCM  2");
+insert into GCM values (3,"GCM  3");
+insert into GCM values (4,"GCM  4");
+********************************************************************************************
+
+create table TRAVEL ( Travel_Id int Not null primary key, Travel_Type varchar(30) unique);
+
+insert into Travel values (1,"Business Travel");
+insert into Travel values (2,"Short Term Travel (3 months to 1 year)");
+insert into Travel values (3,"Long Term Travel(more than 1 year)");
+insert into Travel values (4,"Permanent Reloaction");
+********************************************************************************************
+
+create table Country(
+ country_Id varchar(20) primary key, country_name varchar(20));
+
+insert into Country values ("FRA250","France");
+insert into Country values ("DEU276","Germany");
+insert into Country values ("USA840","United States");
+********************************************************************************************
+
+ create table City(
+ city_Id int Not null primary key, city_name VARCHAR(20)  UNIQUE,  country_Id varchar(20),
+        foreign key (country_Id) references Country(country_Id));
+
+insert into City values (2988507,"Paris","FRA250");
+        insert into City values (2995469,"Marseille","FRA250");
+        insert into City values (2996944,"Lyon","FRA250");
+        insert into City values (2972315,"Toulouse","FRA250");
+        insert into City values (2990440,"Nice","FRA250");
+        insert into City values (2950622,"Bergin","DEU276");
+        insert into City values (2958494,"Alheim","DEU276");
+        insert into City values (2930695,"Elster","DEU276");
+        insert into City values (2807229,"Wittmar","DEU276");
+        insert into City values (2843042,"Runkel","DEU276");
+        insert into City values (09780,"California City","USA840");
+        insert into City values (24764,"Ford City","USA840");
+        insert into City values (00100,"Washington,D.C","USA840");
+        insert into City values (09000,"Brownsville","USA840");
+        insert into City values (79610,"New York","USA840");
+********************************************************************************************
+
+ create table EMPLOYEE (Emp_Id varchar(20) not null primary key,
+Emp_Name varchar(30) not null ,
+MGR varchar(20) not null,
+City varchar(20),
+Country varchar(20),
+GCM_Id int Not Null,
+DAS_Id  varchar(20) unique,
+foreign key(GCM_Id) references GCM(GCM_Id));
+
+Insert into employee values("WGS0878","Rutuja","WGS0712","Mumbai","India",1,"W127393");
+Insert into employee values("WGS0833","Shreyank","WGS0712","Mumbai","India",1,"W128322");
+Insert into employee values("WGS0822","Pravin","WGS0715","pune","India",2,"W116411");
+Insert into employee values("WGS0712","viren","WGS0743","Mumbai","India",3,"W101239");
+Insert into employee values("WGS0755","Krishnpriya","WGS0743","Chennai","India",2,"W112251");
+Insert into employee values("WGS0743","Rashmi","WGS0715","Banglore","India",4,"W135532");
+Insert into employee values("WGS0715","Jitesh","WGS0712","Pune","India",4,"W072388");
+Insert into employee values("WGS0842","Tanvi","WGS0743","Banglore","India",2,"W1280406");
+Insert into employee values("WGS0802","Himaan","WGS0715","Banglore","India",1,"W128344");
+Insert into employee values("WGS0841","Anwari","WGS0715","Mumbai","India",1,"W127429");
+Insert into employee values("WGS0854","Sanket","WGS0712","Mumbai","India",1,"W127573");
+********************************************************************************************
+
+create table Login(
+Username varchar(20) primary key,
+Password varchar(20) not null,
+Emp_Id Varchar(20) not  null, foreign key(Emp_Id) references EMPLOYEE(Emp_Id));
+
+insert into login values("rutu78" , "ab12","WGS0878");
+insert into login values("shre33" , "cd34","WGS0833");
+insert into login values("prav22" , "ef56","WGS0822");
+insert into login values("vire12" , "gh78","WGS0712");
+insert into login values("kris55" , "ij90","WGS0755");
+insert into login values("jite15" , "mn34","WGS0715");
+insert into login values("tanv42" , "op56","WGS0842");
+insert into login values("hima02" , "qr78","WGS0802");
+insert into login values("anwa41" , "st90","WGS0841");
+insert into login values("sank54" , "uv12","WGS0854");
+insert into login values("rash43" , "wy34","WGS0743");
+********************************************************************************************
+
+create table Travel_Details(Request_No int not null primary key auto_increment,
+Emp_Id varchar(20) not null,
+GCM_ID int ,
+travel_Id int ,
+country_Id varchar(20),
+City_Id  int ,
+Start_Date datetime,
+Expected_EndDate datetime,
+mgr varchar(20),
+status varchar(20) not null,
+foreign key(GCM_ID) references GCM(GCM_ID),
+foreign key(Travel_Id) references Travel(Travel_Id),
+foreign key(country_Id) references Country(country_Id),
+foreign key(City_Id) references City(City_Id),
+foreign key(Emp_Id) references Employee(Emp_Id),
+foreign key(mgr) references Employee(Emp_Id));
+
+insert into travel_Details(Emp_Id,GCM_ID,travel_Id,country_Id,City_Id,Start_Date,Expected_EndDate,mgr,status) values("WGS0833",1,2,"FRA250",2990440,'2022-07-12','2022-10-17',"WGS0712","pending");
+insert into travel_Details(Emp_Id,GCM_ID,travel_Id,country_Id,City_Id,Start_Date,Expected_EndDate,mgr,status) values("WGS0842",2,1,"DEU276",2930695,'2022-10-02','2022-10-28',"WGS0743","Approved");
+insert into travel_Details(Emp_Id,GCM_ID,travel_Id,country_Id,City_Id,Start_Date,Expected_EndDate,mgr,status) values("WGS0755",2,3,"USA840",09780,'2019-08-31','2020-02-18',"WGS0743","Rejected");
+insert into travel_Details(Emp_Id,GCM_ID,travel_Id,country_Id,City_Id,Start_Date,Expected_EndDate,mgr,status) values("WGS0802",1,3,"USA840",09780,'2022-09-11','2023-03-03',"WGS0715","Approved");
+insert into travel_Details(Emp_Id,GCM_ID,travel_Id,country_Id,City_Id,Start_Date,Expected_EndDate,mgr,status) values("WGS0854",1,4,"USA840",79610,'2022-10-03','2055-06-09',"WGS0712","pending");
+***********************************************************************************************
